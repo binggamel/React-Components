@@ -12,13 +12,13 @@
 
 - Example
 
-''' html
+```
 
 <ButtonEdit></ButtonEdit>
 
 <ButtonEdit edit="point1"/>
 
-'''
+```
 
 ## BookMark 사용법
 
@@ -30,9 +30,9 @@
 
 - Example
 
-''' html
-<BookMark size="large"></BookMark>
-'''
+```
+    <BookMark size="large"></BookMark>
+```
 
 ## UserImg 사용법
 
@@ -42,6 +42,6 @@
 
 - Example
 
-''' html
-<UserImg size="large"/>
-'''
+```
+    <UserImg size="large"/>
+```
