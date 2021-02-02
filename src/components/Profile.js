@@ -60,11 +60,15 @@ const Group = styled.div`
 `;
 
 const CreateClassStyle = {
-    marginTop: "10px"
+  marginTop: "10px",
+  boxShadow: "0px 3px 7px rgb(198, 198, 198)",
+  borderRadius : "5px"
+  
 }
 
 const btnStyle = {
-    marginTop: "40px"
+  marginTop: "40px",
+  
 }
 
 function Profile({ title, children, onCancel, visible }) {
@@ -90,9 +94,6 @@ function Profile({ title, children, onCancel, visible }) {
                     </Group>
                         
                 </ProfileFrame>
-                    
-                
-                <ButtonEdit style={CreateClassStyle} block edit="point_1">교실 개설하기</ButtonEdit>
                
                     
 
