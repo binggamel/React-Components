@@ -8,16 +8,16 @@ import PasswordCorrect from './PasswordCorrect';
 
 const layout = {
   labelCol: {
-    span: 8,
+    span: 6,
   },
   wrapperCol: {
-    span: 16,
+    span: 20,
   },
 };
 const tailLayout = {
   wrapperCol: {
     offset: 8,
-    span: 16,
+    span: 20,
   },
 };
 
@@ -195,8 +195,8 @@ function Login() {
                 <PasswordCorrect visible={passwordCorrectMessage}/>
     
           
-            <Form.Item {...tailLayout}>
-                <ButtonEdit edit="point_1" block htmlType="submit">
+            <Form.Item {...layout} >
+                <ButtonEdit edit="point_1" block htmlType="submit" style={{ marginLeft: "45px", marginTop:"20px"}} >
                 회원가입
                 </ButtonEdit>
             </Form.Item>

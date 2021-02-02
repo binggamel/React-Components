@@ -12,6 +12,8 @@ import UserImg from './components/UserImg';
 import Login from './components/Login';
 import BackGround from './components/BackGround';
 import ButtonEdit from './components/ButtonEdit';
+import CreateClass from './components/CreateClass';
+
 
 const { Meta } = Card;
 
@@ -40,12 +42,13 @@ function App() {
     <div className="App">
       <ButtonGroup>
         <ButtonEdit edit="point_1" onClick={onClick}>ProFile</ButtonEdit>
+        <ButtonEdit edit="point_3">Create Class</ButtonEdit>
         <BookMark >온라인 강의실 입장</BookMark>
         <Profile title="user name" onCancel={onCancel} visible={profile}>사용자 프로필 확인</Profile>
       </ButtonGroup>
 
+      <CreateClass></CreateClass>
       
-      <Login></Login>
 
 
     </div>
