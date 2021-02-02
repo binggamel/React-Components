@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+
 import { Button } from 'antd';
-import { DatePicker } from 'antd';
+
 import styled from 'styled-components';
 import React from 'react';
 import { useState } from 'react';
@@ -9,6 +9,9 @@ import Profile from './components/Profile';
 import BookMark from './components/BookMark';
 import { Card, Avatar } from 'antd';
 import UserImg from './components/UserImg';
+import Login from './components/Login';
+import BackGround from './components/BackGround';
+import ButtonEdit from './components/ButtonEdit';
 
 const { Meta } = Card;
 
@@ -33,31 +36,36 @@ function App() {
   }
 
   return (
+    
     <div className="App">
       <ButtonGroup>
-        <Button type="primary" onClick={onClick}>ProFile</Button>
+        <ButtonEdit edit="point_1" onClick={onClick}>ProFile</ButtonEdit>
         <BookMark >온라인 강의실 입장</BookMark>
         <Profile title="user name" onCancel={onCancel} visible={profile}>사용자 프로필 확인</Profile>
       </ButtonGroup>
 
       
-      <Card
-        style={{ width: 300 }}
-        cover={
-          <img
-            alt="example"
-            src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-          />}
-      >
-        <Meta
-          avatar={<UserImg size='small'/>}
-          title="예비 고2 심화반"
-          description="** 공지사항 나올곳 **"
-        />
-      </Card>
+      <Login></Login>
+
 
     </div>
+    
   );
 }
 
 export default App;
+
+{/* <Card
+style={{ width: 300 }}
+cover={
+  <img
+    alt="example"
+    src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+  />}
+>
+<Meta
+  avatar={<UserImg size='small'/>}
+  title="예비 고2 심화반"
+  description="** 공지사항 나올곳 **"
+/>
+</Card> */}

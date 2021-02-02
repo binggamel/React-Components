@@ -10,18 +10,25 @@ const edits = {
     point_2: {
         backgroundcolor: '#3AEFFF',
         color:'black'
+    },
+    point_3: {
+      backgroundcolor: '#FF754B',
+      color:'white'
     }
+    
   };
   
   const editStyles = css`
     ${({ edit }) => css`
       background-color: ${edits[edit].backgroundcolor};
       color: ${edits[edit].color};
+      text-decoration: block;
       
       &:hover {
         background-color: ${edits[edit].backgroundcolor};
         color: ${edits[edit].color};
       }
+
     `}
   `;
   
