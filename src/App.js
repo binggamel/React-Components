@@ -12,6 +12,7 @@ import UserImg from './components/UserImg';
 import Login from './components/Login';
 import BackGround from './components/BackGround';
 import ButtonEdit from './components/ButtonEdit';
+import CreateClass2 from './components/CreateClass2';
 import CreateClass from './components/CreateClass';
 
 
@@ -47,7 +48,7 @@ function App() {
         <Profile title="user name" onCancel={onCancel} visible={profile}>사용자 프로필 확인</Profile>
       </ButtonGroup>
 
-      <CreateClass></CreateClass>
+      <CreateClass2></CreateClass2>
       
 
 

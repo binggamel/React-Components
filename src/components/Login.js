@@ -232,7 +232,7 @@ const cardStyle = {
     right: "0",
     marginRight: "15vw",
     width: "470px",
-    height: "450px",
+    height: "500px",
     boxShadow: "0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)",
     borderRadius: "3%"
 }

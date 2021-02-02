@@ -105,6 +105,7 @@ function CreateClass() {
                             <Option value=" 2 ">중등</Option>
                             <Option value=" 3 ">고등</Option>
                             <Option value=" 4 ">특강</Option>
+                            <Option value=" 5 ">기타</Option>
                     </Select>   
                 </Form.Item>
                     
