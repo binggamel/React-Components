@@ -9,11 +9,13 @@ import Profile from './components/Profile';
 import BookMark from './components/BookMark';
 import { Card, Avatar } from 'antd';
 import UserImg from './components/UserImg';
-import Login from './components/Login';
+import SignUp from './components/SignUp';
 import BackGround from './components/BackGround';
 import ButtonEdit from './components/ButtonEdit';
 import CreateClass2 from './components/CreateClass2';
 import CreateClass from './components/CreateClass';
+import JoinClass from './components/JoinClass';
+import JoinClass2 from './components/JoinClass2';
 
 
 const { Meta } = Card;
@@ -48,8 +50,8 @@ function App() {
         <Profile title="user name" onCancel={onCancel} visible={profile}>사용자 프로필 확인</Profile>
       </ButtonGroup>
 
-      <CreateClass2></CreateClass2>
       
+      <JoinClass2></JoinClass2>
 
 
     </div>

@@ -25,7 +25,7 @@ const layout = {
   const suffix = (
     <AudioOutlined
       style={{
-        fontSize: 16,
+        fontSize: 14,
         color: '#1890ff',
       }}
     />
@@ -48,51 +48,64 @@ function CreateClass2() {
     
     return (
         <div className="container" style={containerStyle}>
-            <Card style={cardStyle}>
-            <Form
-                {...layout}
-                name="basic"
-                initialValues={{
-                    remember: true,
-                }}
-                onFinish={onFinish}
-                onFinishFailed={onFinishFailed}
-                style={formStyle}
-                >
+            <div style={divStyle}>
+                <div className="wellcome" style={{ marginBottom: "10px" }} >
+                    <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQ3tzS%2FbtqVzSMYxv4%2F4hzWcE24Ty9EEgwtkr5ohK%2Fimg.png" alt="wellcomeEmoticon" style={{width:"160px"}}></img>
+                    <p style={{marginBottom:"0"}}>축하합니다!</p>
+                    <h2>교실이 만들어졌습니다! 코드나 초대링크를 학생들에게 보내주세요!</h2>
+                </div>
+                <Card style={cardStyle}>
+                <p>교실 코드와 최대링크를 타인에 노출되지 않게 조심하세요!</p>
+                <Form
+                    {...layout}
+                    name="basic"
+                    initialValues={{
+                        remember: true,
+                    }}
+                    onFinish={onFinish}
+                    onFinishFailed={onFinishFailed}
+                    style={formStyle}
+                    >
 
-    
-               
+        
+                
+                            
+                    
+                    <Form.Item
+                        label="교실 코드"
+                        name="classCode"
+                    >
+                        <Search
+                            placeholder="교실 코드 나오는 곳"
+                            allowClear
+                            enterButton="📄 코드 복사"
+                            size="medium"
+                            readOnly
+                            onSearch={onSearch}
+                        />
+                    </Form.Item>
+                    
                         
-                   
-                <Form.Item
-                    label="교실 코드"
-                    name="classCode"
-                >
-                    <Search
-                        placeholder="input search text"
-                        allowClear
-                        enterButton="Search"
-                        size="large"
-                        onSearch={onSearch}
-                    />
-                </Form.Item>
-            
-                <ButtonEdit edit="point_1" >코드 복사</ButtonEdit>
-                       
-                    
-                    
-                    
-                <Form.Item
-                    label="교실 초대 링크"
-                    name="classURL"
-                >
-                    <Input readOnly/>
-                </Form.Item>
+                        
+                        
+                    <Form.Item
+                        label="교실 초대 링크"
+                        name="classURL"
+                    >
+                        <Search
+                            placeholder="교실 코드 링크 나오는 곳"
+                            allowClear
+                            enterButton="📄 링크 복사"
+                            size="medium"
+                            readOnly
+                            onSearch={onSearch}
+                        />
+                    </Form.Item>
 
-                </Form>
-                <Button  style={{width: "290px", marginTop: "20px"}}> 내 교실 목록 가기</Button>
-            </Card>
-
+                    </Form>
+                    <Button  style={{width: "290px", marginTop: "10px"}}> 내 교실 목록 가기</Button>
+                </Card>
+            </div>
         </div>
     )
 }
@@ -100,16 +113,20 @@ function CreateClass2() {
 export default CreateClass2;
 
 
-const cardStyle = {
+const divStyle = {
     position: "absolute",
-    top: "30%",
     marginLeft: "auto",
     marginRight: "auto",
+}
+
+const cardStyle = {
+   
+    // top: "30%",
     width: "710px",
-    height: "270px",
+    height: "250px",
     boxShadow: "0 2px 5px 0 rgba(0,0,0,0.16)",
     borderRadius: "2%",
-    padding: "30px"
+    padding: "10px"
 }
 
 const containerStyle = {
